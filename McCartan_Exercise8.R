@@ -28,7 +28,7 @@ SepalWidthRows=iris_df[iris_df$Sepal.Width>=3.5,]
 # write data for species setosa to comma-delimited file named 'setosa.csv'
 # extract setosa data
 setosa_data=iris_df[iris_df$Species=="setosa",]
-write.csv(setosa_data, "~/Library/CloudStorage/GoogleDrive-annamac2021@gmail.com/My Drive/School/Fall 2022/Biocomputing/R/Biocomputing-Exercise8\\setosa.csv")
+write.csv(setosa_data, "~/Library/CloudStorage/GoogleDrive-annamac2021@gmail.com/My Drive/School/Fall 2022/Biocomputing/R/Biocomputing-Exercise8/setosa.csv")
 # calculate mean, minimum, maximum Petal.Length for virginica observations
 # extract virginica data
 virginica_data=iris_df[iris_df$Species=="virginica",]
