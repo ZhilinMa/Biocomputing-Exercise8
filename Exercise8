@@ -1,0 +1,56 @@
+∑#Exercise 9-- Carolina Andrea Jimenez Soto
+
+#Question One
+
+#Write R code that replicates the functionality of the head function in bash.
+
+#Load input
+
+fileinput<-read.csv( file = "iris.csv", header =TRUE, sep=","))
+
+#number of lines for output (example of the first 10 lines)
+
+X <- 10
+
+#R script to return top 10 lines of file (variable can be changed to desired number of lines)
+
+fileinput[0:X]
+
+
+
+#Question Two
+
+#Load file
+
+data <- read.csv( file= "iris.csv", header=TRUE,  sep=",")
+
+#Part 1 
+
+data[(nrow(data)-1):nrow(data),(ncols(data)-1):ncols(data)]
+
+#Part 2
+
+setosaobs = sum(data$Species=="setosa")
+versicolorobs = sum(data$Species=="versicolor")
+virginicaobs = sum(data$Species=="virginica")
+
+#Part 3
+
+3.5Sepal.Width <- sum(data$Sepal.Width > 3.5)
+
+#Part 4
+
+setosadata <- data[data[,5]=="setosa",]
+write.table(setosadata, file = "setosadata.csv", sep = ",")
+
+#Part 5
+
+virginicadata <- data[data[,5]=="virginica"]
+
+total <-  nrow(virginicadata)
+
+mean = sum(virginicadat$Petal.length)/total
+
+max  = max(virginicadat$Petal.length)
+
+min  = min(virginicadat$Petal.length)  
