@@ -31,10 +31,12 @@ print(species.list)
 num.setosa <- sum(iris.table[,"Species"] == "setosa")
 num.versicolor <- sum(iris.table[,"Species"] == "versicolor")
 num.virginica <- sum(iris.table[,"Species"] == "virginica")
+print(paste("Setosa= ",num.setosa,";","Versicolor= ",num.versicolor,";","Virginica= ",num.virginica,sep=""))
 #return rows with Sepal.Width > 3.5
 iris.table[iris.table[,"Sepal.Width"]>3.5,]
 #writing all data for setosa species to comma delimited file named setosa.csv
 setosa.only <- iris.table[iris.table[,"Species"] == "setosa",]
+print(setosa.only)
 write.table(setosa.only,file="setosa.csv")
 #calculating min, max, mean for Petal.Length observations of virginica
 virginica.only <- iris.table[iris.table[,"Species"] == "virginica",]
